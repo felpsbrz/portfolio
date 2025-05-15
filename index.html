@@ -2,44 +2,161 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio - Felipe Soares</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Felipe Soares - Desenvolvedor Full Stack">
+    <title>Felipe Soares | Desenvolvedor Full Stack</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Seu Nome</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Felipe Soares</h1>
+            <h2>Desenvolvedor Full Stack</h2>
+            <nav>
+                <ul>
+                    <li><a href="#sobre"><i class="fas fa-user"></i> Sobre</a></li>
+                    <li><a href="#habilidades"><i class="fas fa-code"></i> Habilidades</a></li>
+                    <li><a href="#projetos"><i class="fas fa-project-diagram"></i> Projetos</a></li>
+                    <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou estudante de Desenvolvimento Web, apaixonado por tecnologia, interfaces intuitivas e boas práticas de programação. Busco oportunidades para crescer profissionalmente e colaborar com projetos inovadores.</p>
-    </section>
+    <main>
+        <section id="sobre" class="container">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                <img src="https://via.placeholder.com/200" alt="Foto de Felipe Soares" class="profile-img">
+                <div class="sobre-texto">
+                    <p>Desenvolvedor Full Stack com 3 anos de experiência em criação de soluções web escaláveis. Especializado em JavaScript, React e Node.js, com certificações em AWS e Scrum.</p>
+                    <p>Formado em Análise e Desenvolvimento de Sistemas pela Universidade XYZ, com foco em arquitetura de software e experiência do usuário.</p>
+                    <p>Atualmente trabalhando na TechSolutions como Desenvolvedor Sênior, liderando a equipe de front-end no desenvolvimento de aplicações empresariais.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <ul>
-            <li><strong>Site Pessoal</strong> - Página responsiva com HTML, CSS e JavaScript.</li>
-            <li><strong>To-Do List</strong> - Aplicação de lista de tarefas com armazenamento local.</li>
-            <li><strong>Jogo da Memória</strong> - Jogo interativo desenvolvido com JavaScript puro.</li>
-        </ul>
-    </section>
+        <section id="habilidades" class="container">
+            <h2>Habilidades Técnicas</h2>
+            <div class="habilidades-grid">
+                <div class="habilidade-categoria">
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
+                        <li><i class="fab fa-js"></i> JavaScript (ES6+)</li>
+                        <li><i class="fab fa-react"></i> React.js</li>
+                        <li><i class="fab fa-vuejs"></i> Vue.js</li>
+                        <li><i class="fab fa-sass"></i> Sass</li>
+                    </ul>
+                </div>
+                <div class="habilidade-categoria">
+                    <h3>Back-end</h3>
+                    <ul>
+                        <li><i class="fab fa-node-js"></i> Node.js</li>
+                        <li><i class="fas fa-database"></i> MongoDB</li>
+                        <li><i class="fas fa-database"></i> PostgreSQL</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fas fa-server"></i> RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="habilidade-categoria">
+                    <h3>Ferramentas</h3>
+                    <ul>
+                        <li><i class="fab fa-git"></i> Git</li>
+                        <li><i class="fab fa-docker"></i> Docker</li>
+                        <li><i class="fab fa-aws"></i> AWS</li>
+                        <li><i class="fas fa-terminal"></i> Linux</li>
+                        <li><i class="fas fa-tasks"></i> Scrum</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: seu.email@exemplo.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">/seu-perfil</a></p>
-        <p>GitHub: <a href="https://github.com/seu-usuario" target="_blank">github.com/seu-usuario</a></p>
-    </section>
+        <section id="projetos" class="container">
+            <h2>Projetos Destacados</h2>
+            <div class="projetos-grid">
+                <article class="projeto-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Sistema de Gestão Empresarial">
+                    <div class="projeto-info">
+                        <h3>Sistema de Gestão Empresarial</h3>
+                        <p>Plataforma completa para gestão de negócios com módulos de vendas, estoque e financeiro. Desenvolvido com React, Node.js e MongoDB.</p>
+                        <div class="projeto-techs">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+                    </div>
+                </article>
+                
+                <article class="projeto-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Aplicativo de Delivery">
+                    <div class="projeto-info">
+                        <h3>Aplicativo de Delivery</h3>
+                        <p>Solução mobile-first para restaurantes, com integração de pagamentos e rastreamento em tempo real. Desenvolvido com Vue.js e Firebase.</p>
+                        <div class="projeto-techs">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>PWA</span>
+                        </div>
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+                    </div>
+                </article>
+                
+                <article class="projeto-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Dashboard Analytics">
+                    <div class="projeto-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Ferramenta de visualização de dados com gráficos interativos e exportação de relatórios. Construído com D3.js e Python.</p>
+                        <div class="projeto-techs">
+                            <span>D3.js</span>
+                            <span>Python</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Ver Projeto</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <p><i class="fas fa-envelope"></i> felipe.soares@example.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 98765-4321</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/felipesoares" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/felipesoares" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/felipesoares" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://medium.com/@felipesoares" target="_blank"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contato-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2023 Felipe Soares. Todos os direitos reservados.</p>
+            <p>Desenvolvido com <i class="fas fa-heart"></i> e código limpo</p>
+        </div>
     </footer>
 </body>
 </html>
